@@ -176,3 +176,21 @@ case .bloodType:
 for i in 1...50 {
     print(i)
 }
+
+
+// --- 平日課題1-13---
+/// Int型配列変数
+var valueE: [Int] = [0]
+
+// 配列に1~50をそれぞれ代入
+for j in 1...50 {
+    if j == 1 {
+        valueE[j - 1] = j
+    } else {
+        valueE.append(j)
+    }
+}
+
+// 配列の要素を出力
+print(valueE)
+
