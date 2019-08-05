@@ -194,3 +194,13 @@ for j in 1...50 {
 // 配列の要素を出力
 print(valueE)
 
+
+// 平日課題1-14
+// String型配列変数valueFの定義
+var valueF: [String] = ["リュウ", "ケン", "ナッシュ", "ガイル", "ベガ", "フェイロン"]
+
+// valueFから”ナッシュ”を削除
+valueF.remove(at: 2)
+
+// 配列の出力
+print(valueF)
