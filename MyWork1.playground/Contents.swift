@@ -219,4 +219,6 @@ valueG.sort {$0 > $1}
 print(valueG)
 
 
-// 
+// ---平日課題1-16---
+// valueGの要素数を出力
+print(valueG.count)
