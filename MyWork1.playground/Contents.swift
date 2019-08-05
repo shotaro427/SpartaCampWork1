@@ -237,3 +237,11 @@ let valueH: [String: Any] = [
 print(valueH["b"])
 
 
+// ---平日課題1-18---
+if let valueOfB = valueH["b"] {
+    print(valueOfB)
+} else {
+    print("存在しない値です。")
+}
+
+
