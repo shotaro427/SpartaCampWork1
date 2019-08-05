@@ -204,3 +204,19 @@ valueF.remove(at: 2)
 
 // 配列の出力
 print(valueF)
+
+
+// 平日課題1-15
+// Int型配列valueGの定義
+var valueG: [Int] = [5, 4, 100, 49, 30, 1, 12, 0]
+
+// 昇順にソート
+valueG.sort {$0 < $1}
+print(valueG)
+
+// 降順にソート
+valueG.sort {$0 > $1}
+print(valueG)
+
+
+// 
