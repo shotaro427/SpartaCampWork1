@@ -238,10 +238,17 @@ print(valueH["b"])
 
 
 // ---平日課題1-18---
+// オプショナルのbinding
 if let valueOfB = valueH["b"] {
     print(valueOfB)
 } else {
-    print("存在しない値です。")
+    print("値はnilです。")
 }
 
 
+// ---平日課題1-19---
+if let valueOfK = valueH["k"] {
+    print(valueOfK)
+} else {
+    print("値はnilです。")
+}
