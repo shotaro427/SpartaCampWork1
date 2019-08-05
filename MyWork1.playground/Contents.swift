@@ -252,3 +252,19 @@ if let valueOfK = valueH["k"] {
 } else {
     print("値はnilです。")
 }
+
+
+// ---平日課題1-20---
+// Any?型の配列valueIの定義
+let valueI: [Any?] = [1, "こんにちわ" , "こんばんわ", nil, 3, 100, "よろしく", nil, "お願いします。"]
+
+// optional binding
+for i in 0...valueI.count - 1 {
+    if let value: Int = valueI[i] as? Int {
+        print("数値は\(value)です。")
+    } else if let value: String = valueI[i] as? String {
+        print(value)
+    } else {
+        print("値はnilです。")
+    }
+}
