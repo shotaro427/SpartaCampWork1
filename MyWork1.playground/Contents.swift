@@ -180,15 +180,11 @@ for i in 1...50 {
 
 // --- 平日課題1-13---
 /// Int型配列変数
-var valueE: [Int] = [0]
+var valueE: [Int] = []
 
 // 配列に1~50をそれぞれ代入
 for j in 1...50 {
-    if j == 1 {
-        valueE[j - 1] = j
-    } else {
-        valueE.append(j)
-    }
+    valueE.append(j)
 }
 
 // 配列の要素を出力
@@ -260,11 +256,14 @@ let valueI: [Any?] = [1, "こんにちわ" , "こんばんわ", nil, 3, 100, "�
 
 // optional binding
 for i in 0...valueI.count - 1 {
-    if let value: Int = valueI[i] as? Int {
+    if let value = valueI[i] as? Int {
         print("数値は\(value)です。")
-    } else if let value: String = valueI[i] as? String {
+    } else if let value = valueI[i] as? String {
         print(value)
     } else {
         print("値はnilです。")
     }
 }
+
+
+
