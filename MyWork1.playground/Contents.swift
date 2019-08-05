@@ -222,3 +222,18 @@ print(valueG)
 // ---平日課題1-16---
 // valueGの要素数を出力
 print(valueG.count)
+
+
+// ---平日課題1-17---
+// 辞書型の定数valueHの定義
+let valueH: [String: Any] = [
+    "key": "value",
+    "a": 1,
+    "b": 2,
+    "c": 3
+]
+
+// キーがbの値を出力
+print(valueH["b"])
+
+
