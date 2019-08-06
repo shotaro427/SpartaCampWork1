@@ -27,7 +27,7 @@ print(valueA / valueB)
 
 // ---平日課題1-3---
 // Int型変数
-var valueC: Int = 999999
+var valueC: Int = 9999
 
 if (valueC / 10) < 1 {
     print("\(valueC)は1桁です。")
@@ -204,15 +204,15 @@ print(valueF)
 
 // 平日課題1-15
 // Int型配列valueGの定義
-var valueG: [Int] = [5, 4, 100, 49, 30, 1, 12, 0]
+let valueG: [Int] = [5, 4, 100, 49, 30, 1, 12, 0]
 
 // 昇順にソート
-valueG.sort {$0 < $1}
-print(valueG)
+let upValueG = valueG.sorted(by: <)
+print(upValueG)
 
 // 降順にソート
-valueG.sort {$0 > $1}
-print(valueG)
+let downValueG = valueG.sorted(by: >)
+print(downValueG)
 
 
 // ---平日課題1-16---
@@ -222,8 +222,7 @@ print(valueG.count)
 
 // ---平日課題1-17---
 // 辞書型の定数valueHの定義
-let valueH: [String: Any] = [
-    "key": "value",
+let valueH: [String: Int] = [
     "a": 1,
     "b": 2,
     "c": 3
@@ -264,6 +263,7 @@ for i in 0...valueI.count - 1 {
         print("値はnilです。")
     }
 }
+
 
 
 
